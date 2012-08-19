@@ -1,0 +1,34 @@
+.TH MISDN_BRIDGE 8
+.SH NAME
+misdn_bridge \- Bridge utility
+.SH SYNOPSIS
+misdn_bridge [\-\-traffic] [\-\-hdlc] [\-\-debug] [\-\-fork] te|nt <port a> te|nt <portb> te|nt <port c> te|nt <port d>
+.SH DESCRIPTION
+Bridges given pairs of ports. The number of given ports must be even.
+.br
+Each pair of ports must be the same interface size (equal channel number).
+.br
+Both ports may have same mode, e.g. 'te', to bridge ISDN leased line.
+.br
+Also bridging a card to ISDN over IP tunnel is possible. (L1oIP)
+.SH OPTIONS
+.B \-\-traffic
+show D-channel traffic
+.TP
+.B \-\-hdlc
+bridge all bchannel via HDLC
+.TP
+.B \-\-debug
+show debug info
+.TP
+.B \-\-fork
+make a daemon fork
+.SH EXAMPLE
+misdn_bridge \-\-traffic te 0 nt 1 # bridges port 0 (TE-mode) with port 1 (NT-mode)
+.SH SEE ALSO
+http://www.misdn.org/
+http://www.linux-call-router.de/doc.html
+.SH AUTHOR
+This minimal man page was written by Victor Seva <linuxmaniac@torreviejawireless.org>
+.br
+from documentation created by Andreas Eversberg <jolly@eversberg.eu>

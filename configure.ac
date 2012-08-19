@@ -182,6 +182,7 @@ AC_CONFIG_FILES([Makefile
                  guitools/qmisdnwatch/Makefile
                  capi20/Makefile
                  capi20/module/Makefile
+                 man/Makefile
                ])
 
 AC_OUTPUT
