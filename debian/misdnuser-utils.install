@@ -1,0 +1,4 @@
+usr/bin/*
+usr/sbin/*
+etc/udev/rules.d/45-misdn.rules
+usr/share/man/*

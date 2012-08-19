@@ -1,0 +1,71 @@
+misdnuser (2.0.15~codebutler1) precise; urgency=low
+
+  * New package for 2.0.15.
+
+ -- Eric Butler <eric@codebutler.com>  Sun, 19 Aug 2012 01:55:02 -0700
+
+misdnv2user (1.7~20100525-1) UNRELEASED; urgency=low
+
+  [ Joerg Dorchain ]
+  * New upstream version
+  * debian/control:
+    - update debian policy 3.8.4
+
+ -- Joerg Dorchain <joerg@dorchain.net>  Wed, 9 Jun 2010 13:00:00 +0200
+
+misdnv2user (1.6~20090906-1) UNRELEASED; urgency=low
+
+  [ Joerg Dorchain ]
+  * New upstream version
+  * debian/control:
+    - update debian policy 3.8.3
+  * Added link to /usr/share/doc/quilt/README.source
+  * Added l1oipctrl.8 manpage
+
+ -- Joerg Dorchain <joerg@dorchain.net>  Mon, 7 Sep 2009 11:00:00 +0200
+
+misdnv2user (1.5~20090602-1) UNRELEASED; urgency=low
+
+  [ Victor Seva ]
+  * New upstream version
+  * debian/rules:
+    - remove patch/unpatch rules. Added quilt.make reference.
+    - remoce some redundant rule dependences.
+  * debian/patches
+    - refresh patches.
+  * debian/control:
+    - add myself as an Uploaders.
+    - update debian policy 3.8.2 ( no changes needed )
+  * Fix lintian errors:
+    - debian/docs ( removed )
+      - W: libmisdnv2user-dev: extra-license-file
+    - debian/copyright ( rewrited ):
+      - W: libmisdnv2user-dev: copyright-without-copyright-notice
+    - debian/changelog ( removed ITP entry )
+    - debian/dirs ( removed )
+      - created *.dirs
+    - debian/misdn_*.8 ( created missing manpages )
+
+  [ Joerg Dorchain ]
+  * Fix lintian errors:
+  - debian-rules (rewrite):
+    - W: dh-clean-k-is-deprecated
+  - debian-control (rewrite):
+    - W: vcs-field-uses-unknown-uri-format
+
+ -- Victor Seva <linuxmaniac@torreviejawireless.org>  Fri, 19 Jun 2009 09:14:54 +0200
+
+misdnv2user (1.3~20090107-1) unstable; urgency=low
+
+  [ Joerg Dorchain ]
+  * New upstream version
+  * renamed to avoid clash with existing package
+  * Adapted in same way as lcr, to provide the build-dependancy
+  * Avoid building shared lib
+  * split into -dev and -utils
+
+  [ Victor Seva ]
+  * Added debian/watch file.
+
+ -- Joerg Dorchain <joerg@dorchain.net>  Sun, 21 Feb 2009 14:12:17 +0100
+

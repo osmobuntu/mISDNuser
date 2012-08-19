@@ -1,0 +1,43 @@
+Source: misdnuser
+Section: devel
+Priority: extra
+Maintainer: Eric Butler <eric@codebutler.com>
+Build-Depends:  debhelper (>= 7.0.50~), dh-autoreconf
+Standards-Version: 3.8.4
+Homepage: http://www.misdn.org/
+Vcs-Git: https://github.com/osmobuntu/mISDNuser.git
+Vcs-Browser: https://github.com/osmobuntu/mISDNuser
+
+Package: misdnuser-dev
+Section: libdevel
+Architecture: any
+Depends: linux-libc-dev (>= 2.6.26), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libmisdn-dev
+Description: new ISDN driver for Linux - user space libs and tools
+ mISDN supports a complete BRI and PRI ETSI compliant DSS1 protocol
+ stack for the TE mode and for the NT mode. It is the successor of
+ the "old" isdn4linux subsystem, in particular its "HiSax" family of
+ drivers. It has growing support for the interface cards of hisax and
+ additionally supports the cool HFCmulti chip based cards.
+ .
+ This is misdn v2 (aka socket branch), matching kernel driver in
+ kernel > 2.6.26
+ .
+ This package contains the files for development
+
+Package: misdnuser-utils
+Section: comm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libmisdn-dev
+Description: new ISDN driver for Linux - user space libs and tools
+ mISDN supports a complete BRI and PRI ETSI compliant DSS1 protocol
+ stack for the TE mode and for the NT mode. It is the successor of
+ the "old" isdn4linux subsystem, in particular its "HiSax" family of
+ drivers. It has growing support for the interface cards of hisax and
+ additionally supports the cool HFCmulti chip based cards.
+ .
+ This is misdn v2 (aka socket branch), matching kernel driver in
+ kernel > 2.6.26
+ .
+ This package contains the user space tools
