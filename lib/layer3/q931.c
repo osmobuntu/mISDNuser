@@ -654,7 +654,7 @@ mi_encode_facility(struct l3_msg *l3m, struct asn1_parm *fac)
 	if (len <= 0)
 		return -EINVAL;
 	if (mb->ctail + len >= mb->cend) {
-		eprint("Msg buffer overflow %d needed %ld available\n", len + 1, mb->cend - mb->ctail);
+		eprint("Msg buffer overflow %d needed %ld available\n", len + 1, (unsigned long) (mb->cend - mb->ctail));
 		return Q931_ERROR_OVERFLOW;
 	}
 	if (l3m->facility) {

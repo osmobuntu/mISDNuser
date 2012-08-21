@@ -1,3 +1,9 @@
+misdnuser (2.0.15~codebutler2) precise; urgency=low
+
+  * Fix i386 build error.
+
+ -- Eric Butler <eric@codebutler.com>  Tue, 21 Aug 2012 09:54:53 -0700
+
 misdnuser (2.0.15~codebutler1) precise; urgency=low
 
   * New package for 2.0.15.
